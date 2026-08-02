@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
-<body class="bg">
-    
+<body class="bg-stone-50 m-0 p-0 text-slate-600">
+    <header>
+        <nav class="flex justify-between gap-3 items-center h-20 px-4 bg-white sticky top-0">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat text-emerald-600 h-12 w-12 pt-1"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+                <div class="text-3xl font-heading text-slate-900 mt-0">Cookora</div>
+            </div>  
+            <ul class="hidden sm:flex gap-5 text-lg">
+                <li><a href="" class="text-emerald-500 font-medium">Finds Chef</a></li>
+                <li><a href="">Become a Chef</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="flex md:hidden gap-5 items-center">
+            <img src="./src/icons/search.svg" alt="" class="md:hidden" >
+             <div class=" text-2xl sm:hidden">&#9776;</div>
+             </div>
+             <div class="hidden md:flex items-center gap-1" >
+             <input type="text" placeholder="Search chef..." class="p-2 border-2 rounded-md focus:outline-none focus:border[2px] focus:border-emerald-500">
+             <search><img src="./src/icons/search.svg" alt="" class="border-2 border-slate-500 rounded-md p-1 text-xl text-slate-50"></search>
+             </div>
+            <button class="hidden bg-white border-2 border-emerald-600 text-lg p-[5px] hover:bg-emerald-600 hover:text-white rounded-xl md:flex">Sign in</button>
+        </nav>
+
 
 </body>
 </html>
