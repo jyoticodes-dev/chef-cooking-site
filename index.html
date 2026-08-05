@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
 <body class="bg-stone-50 m-0 p-0 text-slate-600 bg-origin-border">
-    <header>
-        <nav class="flex justify-between gap-3 items-center h-20 px-4 bg-white sticky top-0">
+    <header class="max-w-full">
+        <nav class="flex justify-between gap-3 items-center h-20 bg-white sticky top-0 w-full">
             <div class="flex gap-1 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat text-emerald-600 h-12 w-12 pt-1"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
                 <div class="text-3xl font-heading text-slate-900 mt-0">Cookora</div>
@@ -24,8 +24,8 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="flex md:hidden gap-5 items-center">
-            <img src="./src/icons/search.svg" alt="" class="md:hidden" >
-             <div class=" text-2xl sm:hidden">&#9776;</div>
+            <img src="./src/icons/search.svg" alt="" class="md:hidden w-6 h-6" >
+             <div class=" text-2xl md:hidden">&#9776;</div>
              </div>
              <div class="hidden md:flex items-center gap-1" >
              <input type="text" placeholder="Search chefs..." class="p-2 border-2 rounded-md focus:outline-none focus:border[2px] focus:border-emerald-500">
@@ -33,6 +33,7 @@
              </div>
             <button class="hidden bg-white border-2 border-emerald-600 text-lg p-[5px] hover:bg-emerald-600 hover:text-white rounded-xl md:flex">Sign in</button>
         </nav>
+        </header>
 
         <!-- here goes hero section -->
         <section class="flex flex-col justify-center items-center md:relative">
@@ -40,7 +41,7 @@
             <div class="mt-5 md:mx-auto md:h-auto md:w-[80%]">
                 <div class="flex flex-col gap-2 items-center text-center md:absolute md:top-[20%] right-10 md:text-slate-50 md:gap-5">
                     <p class="text-amber-500 bg-slate-900 rounded-3xl p-1.5 text-[12px] w-fit">✨ Luxury Private Chef Platform</p>
-                     <h1 class="font-bold text-2xl md:text-5xl">Bring Fine Dining to Your Home</h1>
+                     <h1 class="font-medium text-2xl md:text-5xl font-heading text-white-900">Bring Fine Dining to Your Home</h1>
                      <p class="md:max-w-lg md:mx-auto md:text-xl">Discover skilled private chefs for intimate dinners, celebrations, and unforgettable culinary experiences.</p>
                     <div class="flex justify-center items-center flex-col sm:flex-row w-full gap-3">
                      <button class="w-[60%] sm:w-[40%] bg-emerald-500 rounded-3xl px-10 py-1.5 md:text-2xl text-slate-900 shadow-lg">Find a Chef</button>
@@ -65,7 +66,328 @@
                      </div>
                 </div>
             </div>
-        </section>
+</section>
+
+            <!-- here goes  chef categoeries-->
+             <section class="mt-10 font-medium">
+                <p class="text-[2rem]  text-slate-900 font-heading p-3">Chef Near You</p>
+                    <ul class="flex gap-3 text-slate-900 overflow-x-auto whitespace-nowrap text-sm px-3 justify-center lg:text-lg lg:gap-6">
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">All</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">Indian</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">Chinese</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">Italian</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">BBQ & Grill</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">Japenese</li>
+                        <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300 flex gap-1 items-center">More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                        </li>
+                    </ul>
+                    <div class="mx-auto  place-items-center mt-5 grid grid-cols-1 sm:grid-cols-2 md:gap-4 md:grid-cols-3 gap-8 lg:grid-cols-5">
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef8.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div class="">
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                        <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef7.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef9.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef2.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef3.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef4.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef5.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef6.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef7.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef8.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef3.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                       <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef6.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                       <div class="w-55 flex flex-col mt-4">
+                        <div class="relative">
+                        <img src="./src/images/chef1.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                        <div class="absolute top-2 right-2 text-[12px] text-white flex gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                            <span>4.9</span>
+                        </div>
+                        </div>
+                       <div>
+                            <p class="font-medium text-slate-900">Aarav Mehta</p>
+                            <p class="font-medium text-slate-900">Indian Cuisine</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <p class="text-sm">Mumbai, India</p>
+                            <p class="text-sm">₹3,200/ session</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                        <div class="text-sm mt-0">View profile</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                   </div>
+                    <!-- <div class="flex justify-center gap-4 max-w-full"> -->
+                        <div class="text-lg md:lg text-slate-700 text-center mt-2">Explore more</div>
+                        <!-- </div> -->
+
+             </section>
 
 </body>
 </html>
