@@ -69,7 +69,7 @@
 </section>
 
             <!-- here goes  chef categoeries-->
-             <section class="mt-10 font-medium">
+             <section class="mt-10 font-medium bg-white">
                 <p class="text-[2rem]  text-slate-900 font-heading p-3">Explore Our Chefs</p>
                     <ul class="flex gap-3 text-slate-900 overflow-x-auto whitespace-nowrap text-sm px-3 justify-center lg:text-lg lg:gap-6">
                         <li class="border rounded-3xl p-1 border-slate-400 md:p-2 hover:bg-gray-300">All</li>
@@ -389,13 +389,21 @@
 
              </section>
 
-             <!-- Chef near you section -->
-              <section class="mt-10">
-                <p class="text-[2rem]  text-slate-900 font-heading p-3">Find Chef Near You</p>
+             <!-- Chefs near you section -->
+              <section class="mt-10 px-3">
+                <p class="text-[2rem]  text-slate-900 font-heading">Chefs Near You</p>
+                <p class="text-lg">Discover talented private chefs available in your city for faster bookings.</p>
+                <div class="flex gap-3 relative mt-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin absolute top-4 left-3 items-center"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  <input type="text" name="location" placeholder="Select your city.." class="pl-10 py-3 border-2 focus:outline-none focus:border-2 focus:border-emerald-600 mt-2">
+                </div>
                 <div class="px-10 mt-5 flex md:gap-8 overflow-x-auto gap-5 lg:6 relative w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left absolute bg-emerald-500 text-slate-900 text-2xl rounded-[50%] p-1 left-5 top-25 z-20 hover:bg-emerald-400"><path d="m15 18-6-6 6-6"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right absolute bg-emerald-500 text-slate-900 text-2xl rounded-[50%] p-1 right-5 top-25 z-20 hover:bg-emerald-400"><path d="m9 18 6-6-6-6"/></svg>
-                <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left absolute bg-white text-emerald-600 text-2xl border border-slate-500 rounded-[50%] p-1 left-5 top-25 z-20 shadow-md hover:text-white hover:bg-emerald-700"><path d="m15 18-6-6 6-6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right absolute bg-white text-emerald-600 text-2xl border border-slate-500  rounded-[50%] p-1 right-5 top-25 z-20 shadow-md hover:text-white hover:bg-emerald-700"><path d="m9 18 6-6-6-6"/></svg>
+              
+                    <div class="gap-15 flex md:gap-10 lg:gap-15">
+
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef2.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -416,9 +424,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef4.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -439,9 +448,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef3.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -462,9 +472,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef7.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -485,9 +496,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef5.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -508,9 +520,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef8.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -531,9 +544,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef6.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -554,9 +568,10 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div>
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                     </div>
 
-                    <div class="w-55 flex flex-col mt-4 shrink-0">
+                    <div class="w-55 flex flex-col mt-4 shrink-0 bg-white p-3 shadow-md">
                         <div class="relative">
                         <img src="./src/images/chef2.png" alt="" class="w-55 h-55 object-cover rounded-2xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="darkslategray" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart text-white absolute top-2 left-2 h-6 w-6"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
@@ -577,9 +592,11 @@
                         <div class="text-sm mt-0">View profile</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                         </div> 
+                        <p class="text-slate-900 border border-emerald-600 p-1 rounded-2xl w-fit text-sm ml-2">📍 2.4 km Away</p>
                       </div>
 
                     </div>
+
               </section>
 
 </body>
